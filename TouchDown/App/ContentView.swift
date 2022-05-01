@@ -28,7 +28,23 @@ struct ContentView: View {
                         FeaturedTabView()
                             .frame(height: 250, alignment: .center)
                             .padding(.vertical , 20)
+                        
                         CategoryGridView()
+                        
+                        TitleView(title: "Helmets")
+                        
+                        if #available(iOS 14.0, *) {
+                            LazyVGrid(columns: gridItems, alignment: .center, spacing: rowSpacing, pinnedViews: []) {
+                                ForEach(products) { item in
+                                    ProductItemView(product: item)
+                                }
+                            }
+                            .padding(15)
+                        } else {
+                            // Fallback on earlier versions
+                            #warning("we shold handle for ios 13")
+                        }
+                        
                         FooterView()
                             .padding(.horizontal)
                     }//: VStack
