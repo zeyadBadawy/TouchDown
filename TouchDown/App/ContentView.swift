@@ -44,6 +44,8 @@ struct ContentView: View {
                             // Fallback on earlier versions
                             #warning("we shold handle for ios 13")
                         }
+                        TitleView(title: "Brands")
+                        BrandGridView()
                         
                         FooterView()
                             .padding(.horizontal)
