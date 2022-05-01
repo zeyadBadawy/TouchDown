@@ -26,6 +26,10 @@
 		715A17BD281E4DF900628A09 /* PageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 715A17BC281E4DF800628A09 /* PageView.swift */; };
 		715A17BF281E4E4F00628A09 /* PageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 715A17BE281E4E4F00628A09 /* PageViewController.swift */; };
 		715A17C1281E54B100628A09 /* FeaturedTabView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 715A17C0281E54B100628A09 /* FeaturedTabView.swift */; };
+		715A17C3281ED83800628A09 /* Category.swift in Sources */ = {isa = PBXBuildFile; fileRef = 715A17C2281ED83800628A09 /* Category.swift */; };
+		715A17C5281ED9BF00628A09 /* CategoryItemView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 715A17C4281ED9BF00628A09 /* CategoryItemView.swift */; };
+		715A17C7281EDD3500628A09 /* CategoryGridView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 715A17C6281EDD3500628A09 /* CategoryGridView.swift */; };
+		715A17C9281EE58600628A09 /* SectionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 715A17C8281EE58600628A09 /* SectionView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -50,6 +54,10 @@
 		715A17BC281E4DF800628A09 /* PageView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PageView.swift; sourceTree = "<group>"; };
 		715A17BE281E4E4F00628A09 /* PageViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PageViewController.swift; sourceTree = "<group>"; };
 		715A17C0281E54B100628A09 /* FeaturedTabView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeaturedTabView.swift; sourceTree = "<group>"; };
+		715A17C2281ED83800628A09 /* Category.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Category.swift; sourceTree = "<group>"; };
+		715A17C4281ED9BF00628A09 /* CategoryItemView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CategoryItemView.swift; sourceTree = "<group>"; };
+		715A17C6281EDD3500628A09 /* CategoryGridView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CategoryGridView.swift; sourceTree = "<group>"; };
+		715A17C8281EE58600628A09 /* SectionView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SectionView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -128,6 +136,7 @@
 			isa = PBXGroup;
 			children = (
 				715A17B3281E450200628A09 /* Player.swift */,
+				715A17C2281ED83800628A09 /* Category.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -157,6 +166,9 @@
 				715A17B1281E3BEB00628A09 /* LogoView.swift */,
 				715A17B7281E459F00628A09 /* PlayerItemView.swift */,
 				715A17C0281E54B100628A09 /* FeaturedTabView.swift */,
+				715A17C4281ED9BF00628A09 /* CategoryItemView.swift */,
+				715A17C6281EDD3500628A09 /* CategoryGridView.swift */,
+				715A17C8281EE58600628A09 /* SectionView.swift */,
 			);
 			path = Home;
 			sourceTree = "<group>";
@@ -259,7 +271,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				715A17C7281EDD3500628A09 /* CategoryGridView.swift in Sources */,
 				715A1784281DFD5700628A09 /* AppDelegate.swift in Sources */,
+				715A17C9281EE58600628A09 /* SectionView.swift in Sources */,
 				715A17BD281E4DF900628A09 /* PageView.swift in Sources */,
 				715A1798281DFDC800628A09 /* ContentView.swift in Sources */,
 				715A17B6281E458800628A09 /* BundleExtension.swift in Sources */,
@@ -268,8 +282,10 @@
 				715A17C1281E54B100628A09 /* FeaturedTabView.swift in Sources */,
 				715A1786281DFD5700628A09 /* SceneDelegate.swift in Sources */,
 				715A17B4281E450200628A09 /* Player.swift in Sources */,
+				715A17C5281ED9BF00628A09 /* CategoryItemView.swift in Sources */,
 				715A17B2281E3BEB00628A09 /* LogoView.swift in Sources */,
 				715A17BB281E4DC000628A09 /* PageControl.swift in Sources */,
+				715A17C3281ED83800628A09 /* Category.swift in Sources */,
 				715A17BF281E4E4F00628A09 /* PageViewController.swift in Sources */,
 				715A17AD281E015500628A09 /* FooterView.swift in Sources */,
 				715A17AB281E009F00628A09 /* Constants.swift in Sources */,
