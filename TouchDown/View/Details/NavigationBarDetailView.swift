@@ -9,11 +9,17 @@ import SwiftUI
 
 struct NavigationBarDetailView: View {
     //MARK: PROPERTIES
+    @EnvironmentObject var shop:Shop
+
     //MARK: BODY
     var body: some View {
         HStack {
             Button {
-                print("back")
+                withAnimation(.easeIn) {
+                    feedBack.impactOccurred()
+                    shop.selectedProduct = nil
+                    shop.shouldShowProduct = false
+                }
             } label: {
                 Image(systemName: "chevron.left")
                     .font(.title)
@@ -43,5 +49,6 @@ struct NavigationBarDetailView_Previews: PreviewProvider {
         NavigationBarDetailView()
             .previewLayout(.sizeThatFits)
             .padding()
+            .environmentObject(Shop())
     }
 }

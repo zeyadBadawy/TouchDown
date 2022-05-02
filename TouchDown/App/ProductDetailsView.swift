@@ -10,6 +10,7 @@ import SwiftUI
 struct ProductDetailsView: View {
     //MARK: PROPERTIES
     let product:Product
+    @EnvironmentObject var shop:Shop
     
     //MARK: BODY
     var body: some View {
@@ -45,7 +46,7 @@ struct ProductDetailsView: View {
                 QuantityFavouriteDetailView()
                     .padding(.vertical,10)
                 
-                AddToCartDetailView()
+                AddToCartDetailView(product: product)
                     .padding(.bottom,20)
                 
                 Spacer()
